@@ -1,0 +1,31 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "JetBrainsMono Nerd Font, monospace",
+    "editor.fontLigatures": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [" ", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": [" ", "f", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": [" ", "f", "r"],
+            "commands": ["workbench.action.openRecent"]
+        }
+    ],
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.fontSize": 16
+}
+
