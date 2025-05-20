@@ -1,16 +1,3 @@
-# Created by newuser for 5.9
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-if [[ -f "/opt/homebrew/bin/brew" ]] then
-  # If you're using macOS, you'll want this enabled
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -23,9 +10,6 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-# Add in Powerlevel10k
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
 # Add in zsh plugins
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
@@ -36,8 +20,8 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
 
 # History
 HISTSIZE=5000
@@ -57,13 +41,3 @@ alias ls='ls --color'
 alias c='clear'
 alias parabolic='flatpak run org.nickvision.tubeconverter'
 alias decibels='flatpak run org.gnome.Decibels'
-
-# Shell integrations
-eval "$(fzf --zsh)"
-
-# Add Anaconda to PATH
-#export PATH="$HOME/anaconda3/bin:$PATH"
-#source $HOME/anaconda3/etc/profile.d/conda.sh
-
-# bun completions
-[ -s "/home/muneeb/.bun/_bun" ] && source "/home/muneeb/.bun/_bun"
