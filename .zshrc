@@ -28,7 +28,6 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
-setopt appendhistory
 setopt sharehistory
 
 # Completion styling
