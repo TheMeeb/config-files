@@ -22,7 +22,7 @@ zinit cdreplay -q
 
 # To customize prompt
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
-# Chosing this theme robbyrussell
+# Choosing this theme robbyrussell
 
 # History
 HISTSIZE=5000
