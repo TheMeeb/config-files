@@ -28,11 +28,8 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
-HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -40,5 +37,3 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # Aliases
 alias ls='ls --color'
 alias c='clear'
-alias parabolic='flatpak run org.nickvision.tubeconverter'
-alias decibels='flatpak run org.gnome.Decibels'
