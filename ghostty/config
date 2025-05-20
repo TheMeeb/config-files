@@ -1,4 +1,4 @@
-font-family = RecMonoCasual Nerd Font
-font-size = 14
+font-family = "Hack Nerd Font"
+font-size = 15
 background-opacity = 0.7
-theme = Argonaut
+theme = tokyonight_night
