@@ -20,6 +20,7 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
+# yay -S oh-my-posh
 # To customize prompt
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
 # Choosing this theme robbyrussell
@@ -28,7 +29,14 @@ eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
 setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
