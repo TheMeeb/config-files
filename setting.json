@@ -2,7 +2,7 @@
     "workbench.colorTheme": "Tokyo Night",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontSize": 18,
-    "editor.fontFamily": "RecMonoCasual Nerd Font, monospace",
+    "editor.fontFamily": "Hack Nerd Font Mono",
     "editor.fontLigatures": true,
     "vim.insertModeKeyBindings": [
         {
@@ -27,11 +27,4 @@
     ],
     "workbench.sideBar.location": "right",
     "terminal.integrated.fontSize": 16,
-    
-    "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
-  }
-
 }
-
