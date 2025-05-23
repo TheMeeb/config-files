@@ -44,3 +44,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # Aliases
 alias ls='ls --color'
 alias c='clear'
+
+export PATH="$HOME/.local/bin:$PATH"
