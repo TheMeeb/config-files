@@ -20,11 +20,6 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-# yay -S oh-my-posh
-# To customize prompt
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
-# Choosing this theme robbyrussell
-
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
@@ -46,3 +41,8 @@ alias ls='ls --color'
 alias c='clear'
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# yay -S oh-my-posh
+# To customize prompt
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
+# Choosing this theme robbyrussell
