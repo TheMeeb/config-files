@@ -45,4 +45,4 @@ export PATH="$HOME/.local/bin:$PATH"
 # yay -S oh-my-posh
 # To customize prompt
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.json)"
-# Choosing this theme robbyrussell
+# Choosing this theme negligible
