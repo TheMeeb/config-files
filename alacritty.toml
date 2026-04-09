@@ -1,0 +1,23 @@
+[general]
+import = [
+ "~/.config/alacritty/themes/aura.toml"
+]
+
+[window]
+startup_mode = "Fullscreen"
+decorations = "None"
+
+[font]
+size = 19.0
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
